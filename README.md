@@ -16,21 +16,16 @@ highlighting support file, that works with [bat](https://github.com/sharkdp/bat)
 
 Only the single file: [Ada.sublime-syntax](https://github.com/wiremoons/ada-sublime-syntax/blob/main/ada-sublime-syntax/Ada.sublime-syntax) is required!
 
+### Download
 Download either by:
 
-a) cloning this whole repo and the copy the file as per the instruction below:
-```
-git clone https://github.com/wiremoons/ada-sublime-syntax.git
-```
-or 
+a) cloning this whole repo and the copy the file as per the instruction below: `git clone https://github.com/wiremoons/ada-sublime-syntax.git` **or** 
 
-b) just download the single file directly to your computer with a tool such as `curl` :
-```
-curl -OL https://raw.githubusercontent.com/wiremoons/ada-sublime-syntax/main/ada-sublime-syntax/Ada.sublime-syntax
-```
+b) just download the single file directly to your computer with a tool such as curl or wget : `curl -OL https://raw.githubusercontent.com/wiremoons/ada-sublime-syntax/main/ada-sublime-syntax/Ada.sublime-syntax`
 
-Once you have a copy of the `Ada.sublime-syntax` file, use it with `bat` as 
-follows:
+
+### Install
+Once you have a copy of the `Ada.sublime-syntax` file, use it with `bat` as follows:
 
 1. Save a copy of the `Ada.sublime-syntax` from this repo into the following 
 directory: `~/.config/bat/syntaxes/`
