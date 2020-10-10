@@ -1,5 +1,9 @@
-# Ada.sublime-syntax
-Ada language sublime syntax highlighting support file. Created for use with 'bat'.
+# About 'Ada.sublime-syntax'
+
+Ada language sublime syntax highlighting support file. Created for use with command 
+line tool called [bat](https://github.com/sharkdp/bat) created by @sharkdp
+
+> bat : A cat(1) clone with syntax highlighting and Git integration.
 
 
 ## Purpose
@@ -7,12 +11,10 @@ Ada language sublime syntax highlighting support file. Created for use with 'bat
 To provide an [Ada](https://www.adacore.com/about-ada) language syntax 
 highlighting support file, that works with [bat](https://github.com/sharkdp/bat).
 
-> bat : A cat(1) clone with syntax highlighting and Git integration.
-
 
 ## Installation and Usage
 
-Only the single file: [Ada.sublime-syntax]() is required!
+Only the single file: [Ada.sublime-syntax](https://github.com/wiremoons/ada-sublime-syntax/blob/main/ada-sublime-syntax/Ada.sublime-syntax) is required!
 
 Download either by:
 
@@ -22,9 +24,9 @@ git clone https://github.com/wiremoons/ada-sublime-syntax.git
 ```
 or 
 
-b) just download the file directly to your computer with a tool such as `curl` :
+b) just download the single file directly to your computer with a tool such as `curl` :
 ```
-curl -OL 
+curl -OL https://raw.githubusercontent.com/wiremoons/ada-sublime-syntax/main/ada-sublime-syntax/Ada.sublime-syntax
 ```
 
 Once you have a copy of the `Ada.sublime-syntax` file, use it with `bat` as 
