@@ -12,6 +12,11 @@ To provide an [Ada](https://www.adacore.com/about-ada) language syntax
 highlighting support file, that works with [bat](https://github.com/sharkdp/bat).
 
 
+## Update: 20 Feb 2021
+
+The request to include Ada language syntax highlighting support within the `bat` application is being tracked via [bat Issues #1300](https://github.com/sharkdp/bat/issues/1300). Once included, this will negate the need for the steps below. Once a Pull Request (PR) is submitted and accepted, I will update this page again with the version it is included in.  In the meantime the process below still works and is used on a daily basis on both Windows and Linux version of `bat`.
+
+
 ## Installation and Usage
 
 Only the single file: [Ada.sublime-syntax](https://github.com/wiremoons/ada-sublime-syntax/blob/main/ada-sublime-syntax/Ada.sublime-syntax) is required!
@@ -24,8 +29,10 @@ a) cloning this whole repo and the copy the file as per the instruction below: `
 b) just download the single file directly to your computer with a tool such as curl or wget : `curl -OL https://raw.githubusercontent.com/wiremoons/ada-sublime-syntax/main/ada-sublime-syntax/Ada.sublime-syntax`
 
 
-### Install
+## Install
 Once you have a copy of the `Ada.sublime-syntax` file, use it with `bat` as follows:
+
+### Ubuntu (Linux)
 
 1. Save a copy of the `Ada.sublime-syntax` from this repo into the following 
 directory: `~/.config/bat/syntaxes/`
@@ -35,6 +42,23 @@ directory: `~/.config/bat/syntaxes/`
 Now when viewing an Ada language source code file, syntax highlighting should 
 be supported.
 
+### Windows 10
+
+1. With `bat.exe` installed run the command: `bat --config-dir`. This location is the `bat.exe` config directory location.
+2. Change to the `bat.exe` config directory (as above) and make a new directory called: `syntaxes`.
+3. Save a copy of the `Ada.sublime-syntax` from this repo into the newly created `syntaxes` directory.
+4. Run the following `bat.exe` command: `bat.exe cache --build`
+5. Check Ada is now included in the list when running: `bat --list-languages`
+
+Just for clarity - on my Windows 10 computer with a username of *simon* the full path of the 
+required `syntaxes` directory is: `C:\Users\simon\AppData\Roaming\bat\syntaxes\` and this is 
+where the a copy of the `Ada.sublime-syntax` file from this repo should be saved. The 
+username (ie `simon`) will be diffrent of course for your computer! Then run the 
+command: `bat cache --build` to complete the process.
+
+Now when viewing an Ada language source code file, syntax highlighting should 
+be supported.
+ 
 More complete instructions on using and adding a new syntax files with `bat` are 
 included in the [Bat Readme document](https://github.com/sharkdp/bat#adding-new-syntaxes--language-definitions).
 
